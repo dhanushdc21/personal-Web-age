@@ -1,0 +1,172 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+}
+
+.container {
+  max-width: 900px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.profile-image {
+  flex: 1;
+  text-align: center;
+}
+
+.profile-image img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid #d4a373;
+  object-fit: cover;
+}
+
+.profile-info {
+  flex: 2;
+  padding-left: 20px;
+}
+
+.profile-info h1 {
+  margin: 0 0 10px;
+  color: #d4a373;
+}
+
+.profile-info p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.details-section {
+  margin-bottom: 30px;
+}
+
+.details-section h2 {
+  color: #d4a373;
+  margin-bottom: 10px;
+}
+
+.details-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.details-section li {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.goals-section {
+  margin-bottom: 30px;
+}
+
+.goals-section h2 {
+  color: #d4a373;
+  margin-bottom: 10px;
+}
+
+.goals-section table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.goals-section th, .goals-section td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.goals-section th {
+  background-color: #f4e1d2;
+}
+
+.goals-section td {
+  background-color: #fff;
+}
+
+.media-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.media-section .music, .media-section .video {
+  flex: 1;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.media-section h2 {
+  color: #d4a373;
+  margin-bottom: 10px;
+}
+
+.media-section img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.media-section audio, .media-section video {
+  width: 100%;
+  max-width: 400px;
+}
+
+.video {
+  margin-right: 0; /* Remove the margin from the last element */
+}
+
+.profile-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transition: opacity 0.3s ease;
+}
+
+.profile-image:hover img {
+  opacity: 0;
+}
+
+.profile-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('linkedin.jpeg') no-repeat center center;
+  background-size: cover;
+  border-radius: 50%;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+.profile-image:hover::before {
+  opacity: 1;
+}
